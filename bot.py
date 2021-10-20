@@ -115,5 +115,5 @@ with Client("my_account", api_id, api_hash) as app:
 
 
 json_file = open("kik_telegram_result.json", "w+")
-json_file.write(str(posts))
+json_file.write(json.dumps(posts))
 json_file.close()
